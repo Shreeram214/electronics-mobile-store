@@ -427,7 +427,8 @@
 
     $('#modalImg').src = img(p.image, 900);
     $('#modalImg').alt = `${p.name} (sample product image)`;
-    $('#modalCat').textContent = `${p.label} · ${CATEGORY_LABELS[p.cat]}`;
+    const catName = CATEGORY_LABELS[p.cat];
+    $('#modalCat').textContent = catName.startsWith(p.label) ? catName : `${p.label} · ${catName}`;
     $('#modalTitle').textContent = p.name;
     $('#modalPrice').innerHTML = `${formatINR(p.price)}<small>demo price</small>`;
     $('#modalDesc').textContent = p.desc;
