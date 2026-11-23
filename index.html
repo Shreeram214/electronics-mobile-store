@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en-IN" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TECHNOVA STORE – Smartphones, Laptops, TVs &amp; Electronics Showroom in Sangli</title>
+  <meta name="description" content="TECHNOVA STORE is an electronics and mobile showroom in Sangli, Maharashtra. Explore smartphones, laptops, smart TVs, home appliances, audio and accessories, and enquire on WhatsApp or visit our store.">
+  <meta name="theme-color" content="#101B35">
+  <link rel="canonical" href="https://technova-store-demo.pages.dev/">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TECHNOVA STORE">
+  <meta property="og:title" content="TECHNOVA STORE – Smart Technology. Better Living.">
+  <meta property="og:description" content="Explore smartphones, laptops, smart TVs, home appliances and accessories at TECHNOVA STORE, Sangli. Enquire on WhatsApp or visit the showroom.">
+  <meta property="og:url" content="https://technova-store-demo.pages.dev/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts & icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured data: DEMO PLACEHOLDER business. Replace with verified details before launch. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ElectronicsStore",
+    "name": "TECHNOVA STORE (Demo)",
+    "slogan": "Smart Technology. Better Living.",
+    "description": "Demonstration website for a fictional electronics and mobile showroom. All details are placeholders.",
+    "url": "https://technova-store-demo.pages.dev/",
+    "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1200&q=80",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sangli",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "areaServed": "Sangli, Maharashtra"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ A. ANNOUNCEMENT BAR ============ -->
+  <div class="announce" role="region" aria-label="Store announcements">
+    <div class="container announce__inner">
+      <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+      <p class="announce__text" id="announceText" aria-live="polite">Discover the latest technology at TECHNOVA STORE.</p>
+      <a class="announce__link" href="#showroom">Visit showroom <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <!-- ============ B. HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#home" aria-label="TECHNOVA STORE home">
+        <span class="logo__mark" aria-hidden="true">T</span>
+        <span class="logo__text">TECHNOVA<span>STORE</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home" data-section="home">Home</a></li>
+          <li><a class="nav__link" href="#products" data-filter="mobiles">Mobiles</a></li>
+          <li><a class="nav__link" href="#products" data-filter="laptops">Laptops</a></li>
+          <li><a class="nav__link" href="#products" data-filter="tvs">Televisions</a></li>
+          <li><a class="nav__link" href="#products" data-filter="appliances">Appliances</a></li>
+          <li><a class="nav__link" href="#accessories" data-section="accessories">Accessories</a></li>
+          <li><a class="nav__link" href="#about" data-section="about">About Us</a></li>
+          <li><a class="nav__link" href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+        <div class="nav__mobile-cta">
+          <a class="btn btn--primary btn--block" href="#showroom">Visit Showroom</a>
+          <a class="btn btn--whatsapp btn--block js-wa" data-msg="Hello TECHNOVA STORE, I would like to enquire about a product." href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Enquiry</a>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" id="searchToggle" aria-label="Search products" aria-expanded="false" aria-controls="headerSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a class="icon-btn icon-btn--wa js-wa" data-msg="Hello TECHNOVA STORE, I would like to enquire about a product." href="#" target="_blank" rel="noopener" aria-label="Enquire on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a class="btn btn--primary btn--sm header__cta" href="#showroom">Visit Showroom</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+
+    <!-- Header search panel -->
+    <div class="header-search" id="headerSearch" hidden>
+      <form class="container header-search__form" id="headerSearchForm" role="search">
+        <label class="sr-only" for="headerSearchInput">Search products</label>
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <input type="search" id="headerSearchInput" placeholder="Search smartphones, laptops, TVs…" autocomplete="off">
+        <button type="submit" class="btn btn--primary btn--sm">Search</button>
+        <button type="button" class="icon-btn" id="searchClose" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+      </form>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay" hidden></div>
+
+  <main id="main">
+    <!-- ============ C. HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <span class="eyebrow eyebrow--light"><i class="fa-solid fa-location-dot"></i> Sangli, Maharashtra</span>
+          <h1 id="heroTitle">Upgrade Your World With <span class="text-gradient">Smarter Technology.</span></h1>
+          <p class="hero__lead">Explore the latest smartphones, laptops, entertainment devices and everyday electronics at TECHNOVA STORE.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary btn--lg" href="#products">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn--ghost-light btn--lg" href="#showroom"><i class="fa-solid fa-store"></i> Visit Our Store</a>
+          </div>
+          <ul class="hero__points">
+            <li><i class="fa-solid fa-mobile-screen"></i> Mobiles &amp; Tablets</li>
+            <li><i class="fa-solid fa-laptop"></i> Laptops</li>
+            <li><i class="fa-solid fa-tv"></i> Smart TVs</li>
+            <li><i class="fa-solid fa-headphones"></i> Audio</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" style="--d:.15s">
+          <div class="hero__main-img">
+            <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1100&q=80" width="1100" height="820" alt="Laptop, smartphone, wireless headphones and accessories arranged on a dark desk" fetchpriority="high">
+          </div>
+          <div class="hero__float hero__float--watch">
+            <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=400&q=75" width="200" height="200" alt="Smartwatch with a colourful app grid on its display">
+            <div><strong>Smartwatches</strong><span>Try them in store</span></div>
+          </div>
+          <div class="hero__float hero__float--phone">
+            <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=400&q=75" width="200" height="200" alt="Lavender smartphone on a dark surface">
+            <div><strong>New smartphones</strong><span>Compare models side by side</span></div>
+          </div>
+          <div class="hero__badge"><i class="fa-solid fa-hand-pointer"></i> Hands-on product demos</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ D. SHOP BY CATEGORY ============ -->
+    <section class="section" id="categories" aria-labelledby="catTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Shop by Category</span>
+          <h2 id="catTitle">Everything you need, under one roof</h2>
+          <p>From your next smartphone to the appliances that run your home, browse by category and find the right fit.</p>
+        </div>
+
+        <div class="cat-grid">
+          <article class="cat-card reveal">
+            <div class="cat-card__media"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=700&q=75" width="700" height="500" loading="lazy" alt="Android smartphone showing its home screen"></div>
+            <div class="cat-card__body">
+              <h3>Smartphones</h3>
+              <p>Android, premium and budget phones to match how you work, play and stay connected.</p>
+              <ul class="tag-list"><li>Android</li><li>Premium</li><li>Budget</li></ul>
+              <button class="btn btn--outline btn--sm js-cat" data-cat="mobiles">Explore Category <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </article>
+          <article class="cat-card reveal" style="--d:.06s">
+            <div class="cat-card__media"><img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=700&q=75" width="700" height="500" loading="lazy" alt="Slim silver laptop open on a white desk"></div>
+            <div class="cat-card__body">
+              <h3>Laptops &amp; Computers</h3>
+              <p>Personal and business laptops plus desktops for study, office work and creative projects.</p>
+              <ul class="tag-list"><li>Personal</li><li>Business</li><li>Desktops</li></ul>
+              <button class="btn btn--outline btn--sm js-cat" data-cat="laptops">Explore Category <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </article>
+          <article class="cat-card reveal" style="--d:.12s">
+            <div class="cat-card__media"><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=700&q=75" width="700" height="500" loading="lazy" alt="Smart TV displaying streaming apps in a dimly lit room"></div>
+            <div class="cat-card__body">
+              <h3>Televisions</h3>
+              <p>Smart, LED and 4K televisions for a better movie night, match day or family viewing.</p>
+              <ul class="tag-list"><li>Smart TVs</li><li>LED TVs</li><li>4K TVs</li></ul>
+              <button class="btn btn--outline btn--sm js-cat" data-cat="tvs">Explore Category <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </article>
+          <article class="cat-card reveal">
+            <div class="cat-card__media"><img src="https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=700&q=75" width="700" height="500" loading="lazy" alt="Modern kitchen with a stainless steel refrigerator and built-in appliances"></div>
+            <div class="cat-card__body">
+              <h3>Home Appliances</h3>
+              <p>Refrigerators, washing machines and air conditioners chosen for everyday comfort.</p>
+              <ul class="tag-list"><li>Refrigerators</li><li>Washing Machines</li><li>ACs</li></ul>
+              <button class="btn btn--outline btn--sm js-cat" data-cat="appliances">Explore Category <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </article>
+          <article class="cat-card reveal" style="--d:.06s">
+            <div class="cat-card__media"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=75" width="700" height="500" loading="lazy" alt="Over-ear wireless headphones against a yellow background"></div>
+            <div class="cat-card__body">
+              <h3>Audio &amp; Entertainment</h3>
+              <p>Headphones, Bluetooth speakers and soundbars for music, calls and cinema-style sound.</p>
+              <ul class="tag-list"><li>Headphones</li><li>Speakers</li><li>Soundbars</li></ul>
+              <button class="btn btn--outline btn--sm js-cat" data-cat="audio">Explore Category <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </article>
+          <article class="cat-card reveal" style="--d:.12s">
+            <div class="cat-card__media"><img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=700&q=75" width="700" height="500" loading="lazy" alt="Keyboard, mouse, headphones and other accessories on a white desk"></div>
+            <div class="cat-card__body">
+              <h3>Accessories</h3>
+              <p>Chargers, power banks, keyboards and smartwatches that complete your setup.</p>
+              <ul class="tag-list"><li>Chargers</li><li>Power Banks</li><li>Keyboards</li><li>Smartwatches</li></ul>
+              <button class="btn btn--outline btn--sm js-cat" data-cat="accessories">Explore Category <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ E + F. FEATURED PRODUCTS, SEARCH & FILTERS ============ -->
+    <section class="section section--white" id="products" aria-labelledby="prodTitle">
+      <div class="container">
+        <div class="section-head section-head--row reveal">
+          <div>
+            <span class="eyebrow">Featured Products</span>
+            <h2 id="prodTitle">Explore the catalogue</h2>
+            <p>Search, filter and compare. Tap <strong>View Details</strong> for more, or enquire instantly on WhatsApp.</p>
+          </div>
+          <p class="demo-note"><i class="fa-solid fa-circle-info"></i> Sample products, specifications and prices for demonstration only.</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters reveal" role="search" aria-label="Filter products">
+          <div class="filters__row">
+            <div class="field field--search">
+              <label class="sr-only" for="searchInput">Search by product name</label>
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              <input type="search" id="searchInput" placeholder="Search by product name…" autocomplete="off">
+            </div>
+            <div class="field">
+              <label for="priceSelect">Price range</label>
+              <select id="priceSelect">
+                <option value="all">All prices</option>
+                <option value="0-5000">Under ₹5,000</option>
+                <option value="5000-20000">₹5,000 – ₹20,000</option>
+                <option value="20000-40000">₹20,000 – ₹40,000</option>
+                <option value="40000-60000">₹40,000 – ₹60,000</option>
+                <option value="60000-999999">Above ₹60,000</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="sortSelect">Sort by</label>
+              <select id="sortSelect">
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A to Z</option>
+              </select>
+            </div>
+            <button class="btn btn--light btn--sm filters__clear" id="clearFilters" type="button"><i class="fa-solid fa-rotate-left"></i> Clear Filters</button>
+          </div>
+          <div class="chips" id="categoryChips" role="group" aria-label="Filter by category">
+            <button class="chip is-active" data-cat="all" aria-pressed="true">All</button>
+            <button class="chip" data-cat="mobiles" aria-pressed="false"><i class="fa-solid fa-mobile-screen"></i> Smartphones</button>
+            <button class="chip" data-cat="laptops" aria-pressed="false"><i class="fa-solid fa-laptop"></i> Laptops</button>
+            <button class="chip" data-cat="tvs" aria-pressed="false"><i class="fa-solid fa-tv"></i> Televisions</button>
+            <button class="chip" data-cat="appliances" aria-pressed="false"><i class="fa-solid fa-snowflake"></i> Home Appliances</button>
+            <button class="chip" data-cat="audio" aria-pressed="false"><i class="fa-solid fa-headphones"></i> Audio</button>
+            <button class="chip" data-cat="accessories" aria-pressed="false"><i class="fa-solid fa-plug"></i> Accessories</button>
+          </div>
+        </div>
+
+        <p class="results-count" id="resultsCount" aria-live="polite"></p>
+        <div class="product-grid" id="productGrid"></div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <i class="fa-solid fa-box-open" aria-hidden="true"></i>
+          <h3>No products match your filters</h3>
+          <p>Try a different search or price range, or ask us directly. We can help you find something that is not listed here.</p>
+          <div class="empty-state__actions">
+            <button class="btn btn--primary btn--sm" type="button" id="emptyClear">Clear Filters</button>
+            <a class="btn btn--whatsapp btn--sm js-wa" data-msg="Hello TECHNOVA STORE, I am looking for a product that I could not find on your website." href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ H. LATEST TECHNOLOGY ============ -->
+    <section class="section" id="latest" aria-labelledby="latestTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Latest Technology</span>
+          <h2 id="latestTitle">Discover What's New in Technology.</h2>
+          <p>See the designs and devices people are asking about, then experience them up close at our showroom.</p>
+        </div>
+        <div class="editorial">
+          <article class="ed-card ed-card--tall reveal">
+            <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=900&q=75" width="900" height="1100" loading="lazy" alt="Smartphone with an edge-to-edge display showing a glowing wallpaper">
+            <div class="ed-card__body">
+              <span class="ed-card__tag">Smartphones</span>
+              <h3>Sleek smartphone designs</h3>
+              <p>Slimmer bezels, brighter displays and capable cameras.</p>
+              <button class="btn btn--light btn--sm js-cat" data-cat="mobiles">Browse phones <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </article>
+          <article class="ed-card reveal" style="--d:.06s">
+            <img src="https://images.unsplash.com/photo-1571857089544-64fc3877749d?auto=format&fit=crop&w=900&q=75" width="900" height="600" loading="lazy" alt="Row of laptops displayed on wooden tables in a bright showroom">
+            <div class="ed-card__body">
+              <span class="ed-card__tag">Laptops</span>
+              <h3>Modern laptops</h3>
+              <p>Light, quick machines for work and study.</p>
+              <button class="btn btn--light btn--sm js-cat" data-cat="laptops">Browse laptops <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </article>
+          <article class="ed-card reveal" style="--d:.12s">
+            <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?auto=format&fit=crop&w=900&q=75" width="900" height="600" loading="lazy" alt="Smart speaker, smart lock and hub devices on a white shelf">
+            <div class="ed-card__body">
+              <span class="ed-card__tag">Smart Home</span>
+              <h3>Smart home technology</h3>
+              <p>Speakers, hubs and appliances that work together.</p>
+              <a class="btn btn--light btn--sm" href="#enquiry">Ask our team <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+          <article class="ed-card ed-card--wide reveal" style="--d:.18s">
+            <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=1200&q=75" width="1200" height="600" loading="lazy" alt="Smart TV home screen on a wall-mounted television in a living space">
+            <div class="ed-card__body">
+              <span class="ed-card__tag">Entertainment</span>
+              <h3>Premium entertainment devices</h3>
+              <p>Large-screen TVs and soundbars for a richer home cinema experience.</p>
+              <button class="btn btn--light btn--sm js-cat" data-cat="tvs">Browse televisions <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ I. SPECIAL OFFERS / BUDGET BANNER ============ -->
+    <section class="section section--tight" id="offers" aria-labelledby="offersTitle">
+      <div class="container">
+        <div class="promo reveal">
+          <div class="promo__content">
+            <span class="eyebrow eyebrow--light">Shop by Budget</span>
+            <h2 id="offersTitle">Find the Right Technology for Your Budget.</h2>
+            <p>Tell us what you need and what you would like to spend. We will show you the options that make sense. Ask in store about current offers.</p>
+            <div class="promo__list">
+              <button class="promo__item js-budget" data-cat="mobiles" data-price="5000-20000"><i class="fa-solid fa-mobile-screen"></i><span><strong>Value-for-money smartphones</strong><small>Explore options from ₹5,000 to ₹20,000</small></span><i class="fa-solid fa-arrow-right"></i></button>
+              <button class="promo__item js-budget" data-cat="laptops" data-price="all"><i class="fa-solid fa-laptop"></i><span><strong>Laptops for work and study</strong><small>Compare everyday and performance models</small></span><i class="fa-solid fa-arrow-right"></i></button>
+              <button class="promo__item js-budget" data-cat="tvs" data-price="all"><i class="fa-solid fa-tv"></i><span><strong>Upgrade your home entertainment</strong><small>Smart TVs and audio for every room</small></span><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="promo__visual">
+            <img src="https://images.unsplash.com/photo-1580974928064-f0aeef70895a?auto=format&fit=crop&w=900&q=75" width="900" height="900" loading="lazy" alt="Flat lay of smartphones, a tablet and a smartwatch on a white surface">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ J. WHY CHOOSE US ============ -->
+    <section class="section section--white" id="about" aria-labelledby="whyTitle">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-intro reveal">
+            <span class="eyebrow">About Us</span>
+            <h2 id="whyTitle">Why Choose TECHNOVA STORE?</h2>
+            <p>TECHNOVA STORE is a neighbourhood technology showroom in Sangli. We help families, students and professionals find devices that fit their needs and budget, with honest guidance and time to try products before deciding.</p>
+            <a class="btn btn--primary" href="#enquiry">Talk to Our Team <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="why-grid">
+            <div class="why-card reveal"><span class="why-card__icon"><i class="fa-solid fa-layer-group"></i></span><h3>Wide Product Selection</h3><p>Phones, laptops, TVs, appliances, audio and accessories in one place.</p></div>
+            <div class="why-card reveal" style="--d:.05s"><span class="why-card__icon"><i class="fa-solid fa-comments"></i></span><h3>Helpful Product Guidance</h3><p>Clear, practical advice so you can compare features with confidence.</p></div>
+            <div class="why-card reveal" style="--d:.1s"><span class="why-card__icon"><i class="fa-solid fa-indian-rupee-sign"></i></span><h3>Options Across Budgets</h3><p>Choices from entry level to premium, explained without pressure.</p></div>
+            <div class="why-card reveal"><span class="why-card__icon"><i class="fa-solid fa-hand-pointer"></i></span><h3>In-Store Demonstrations</h3><p>Try displays, keyboards, cameras and sound before you choose.</p></div>
+            <div class="why-card reveal" style="--d:.05s"><span class="why-card__icon"><i class="fa-solid fa-user-check"></i></span><h3>Customer-Focused Assistance</h3><p>We listen first, then recommend what actually suits you.</p></div>
+            <div class="why-card reveal" style="--d:.1s"><span class="why-card__icon"><i class="fa-brands fa-whatsapp"></i></span><h3>Convenient Enquiry Support</h3><p>Ask about availability by WhatsApp, phone or the enquiry form.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ K. BRANDS ============ -->
+    <section class="brands" aria-labelledby="brandsTitle">
+      <div class="container">
+        <h2 class="brands__title" id="brandsTitle">Brands customers ask us about</h2>
+        <ul class="brands__list">
+          <li>Samsung</li><li>Apple</li><li>Xiaomi</li><li>OnePlus</li><li>HP</li><li>Dell</li><li>Lenovo</li><li>Sony</li><li>LG</li><li>boAt</li>
+        </ul>
+        <p class="brands__note">Brand names are shown as examples of what customers commonly look for. They do not indicate authorised dealership, partnership or guaranteed stock. Please enquire for current availability.</p>
+      </div>
+    </section>
+
+    <!-- ============ L. ACCESSORIES COLLECTION ============ -->
+    <section class="section" id="accessories" aria-labelledby="accTitle">
+      <div class="container">
+        <div class="section-head section-head--row reveal">
+          <div>
+            <span class="eyebrow">Accessories Collection</span>
+            <h2 id="accTitle">Complete your setup</h2>
+            <p>The small things that make your devices more useful every day.</p>
+          </div>
+          <button class="btn btn--primary js-cat" data-cat="accessories">View Collection <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="acc-grid">
+          <button class="acc-card reveal js-acc" data-query="earbuds"><img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=500&q=70" width="500" height="400" loading="lazy" alt="White wireless earbuds with their charging case"><span>Wireless Earbuds</span></button>
+          <button class="acc-card reveal js-acc" data-query="headphones" style="--d:.05s"><img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=500&q=70" width="500" height="400" loading="lazy" alt="Grey over-ear headphones on a light background"><span>Headphones</span></button>
+          <button class="acc-card reveal js-acc" data-query="power bank" style="--d:.1s"><img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=500&q=70" width="500" height="400" loading="lazy" alt="Hand holding a slim teal power bank"><span>Power Banks</span></button>
+          <button class="acc-card reveal js-acc" data-query="charger" style="--d:.15s"><img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=500&q=70" width="500" height="400" loading="lazy" alt="White charging adapter with a coiled charging cable"><span>Chargers &amp; Cables</span></button>
+          <button class="acc-card reveal js-acc" data-query="watch"><img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=500&q=70" width="500" height="400" loading="lazy" alt="Smartwatch worn on a wrist showing the time"><span>Smartwatches</span></button>
+          <button class="acc-card reveal js-acc" data-query="bag" style="--d:.05s"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=500&q=70" width="500" height="400" loading="lazy" alt="Navy laptop backpack against a light wall"><span>Laptop Bags</span></button>
+          <button class="acc-card reveal js-acc" data-query="keyboard" style="--d:.1s"><img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=500&q=70" width="500" height="400" loading="lazy" alt="Slim white wireless keyboard"><span>Keyboards &amp; Mice</span></button>
+          <button class="acc-card reveal js-acc" data-query="speaker" style="--d:.15s"><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=500&q=70" width="500" height="400" loading="lazy" alt="Black portable Bluetooth speaker"><span>Bluetooth Speakers</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ M. VISIT OUR SHOWROOM ============ -->
+    <section class="section section--white" id="showroom" aria-labelledby="showroomTitle">
+      <div class="container showroom">
+        <div class="showroom__media reveal">
+          <img src="https://images.unsplash.com/photo-1777073233428-ff338440ccad?auto=format&fit=crop&w=1100&q=75" width="1100" height="800" loading="lazy" alt="Bright, modern electronics showroom with devices displayed on long tables">
+          <span class="showroom__tag"><i class="fa-solid fa-location-dot"></i> Sangli, Maharashtra</span>
+        </div>
+        <div class="showroom__content reveal" style="--d:.1s">
+          <span class="eyebrow">Visit Our Showroom</span>
+          <h2 id="showroomTitle">See It. Experience It. Choose What Works for You.</h2>
+          <p class="lead">Visit our showroom to explore products, compare options and get help choosing the right technology.</p>
+          <p>Hold the phone, test the keyboard, hear the speakers and see the picture quality for yourself. Our team is happy to walk you through the differences.</p>
+          <ul class="info-list">
+            <li><i class="fa-regular fa-clock"></i><div><strong>Opening hours</strong><span>[Opening hours placeholder – to be confirmed]</span></div></li>
+            <li><i class="fa-solid fa-location-dot"></i><div><strong>Location</strong><span>Sangli, Maharashtra, India<br>[Full store address placeholder]</span></div></li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="https://www.google.com/maps/search/?api=1&amp;query=Sangli%2C+Maharashtra%2C+India" target="_blank" rel="noopener"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a>
+            <a class="btn btn--outline" href="#contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ N. TESTIMONIALS ============ -->
+    <section class="section" id="testimonials" aria-labelledby="testiTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Customer Stories</span>
+          <h2 id="testiTitle">What shoppers say</h2>
+          <p class="demo-note demo-note--center"><i class="fa-solid fa-circle-info"></i> Sample testimonials for demonstration. Not genuine customer reviews.</p>
+        </div>
+
+        <div class="carousel reveal" id="carousel" aria-roledescription="carousel" aria-label="Customer testimonials">
+          <div class="carousel__viewport">
+            <ul class="carousel__track" id="carouselTrack">
+              <li class="testi" aria-roledescription="slide">
+                <div class="stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <blockquote>"I compared three phones side by side before deciding. The team explained the camera and battery differences clearly, without rushing me."</blockquote>
+                <div class="testi__who"><span class="avatar">PK</span><div><strong>Pranav Kulkarni</strong><span>Smartphone · Sangli</span></div></div>
+              </li>
+              <li class="testi" aria-roledescription="slide">
+                <div class="stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <blockquote>"Needed a laptop for engineering college. They asked about my course and suggested a model within my budget. Very helpful."</blockquote>
+                <div class="testi__who"><span class="avatar">SJ</span><div><strong>Sneha Jadhav</strong><span>Laptop · Miraj</span></div></div>
+              </li>
+              <li class="testi" aria-roledescription="slide">
+                <div class="stars" aria-label="4 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                <blockquote>"Watching the TVs in the demo area made the choice easy. I enquired on WhatsApp first and the reply was quick."</blockquote>
+                <div class="testi__who"><span class="avatar">RP</span><div><strong>Rohit Patil</strong><span>Smart TV · Sangli</span></div></div>
+              </li>
+              <li class="testi" aria-roledescription="slide">
+                <div class="stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <blockquote>"We were replacing our old refrigerator and the staff helped us pick the right size for our family. Good, patient service."</blockquote>
+                <div class="testi__who"><span class="avatar">AD</span><div><strong>Anjali Deshmukh</strong><span>Refrigerator · Kupwad</span></div></div>
+              </li>
+              <li class="testi" aria-roledescription="slide">
+                <div class="stars" aria-label="5 out of 5 stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <blockquote>"Got earbuds and a power bank together. They let me test the sound in store, which I really appreciated."</blockquote>
+                <div class="testi__who"><span class="avatar">VS</span><div><strong>Vaibhav Shinde</strong><span>Accessories · Islampur</span></div></div>
+              </li>
+            </ul>
+          </div>
+          <div class="carousel__controls">
+            <button class="icon-btn icon-btn--round" id="prevSlide" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="carousel__dots" id="carouselDots" role="group" aria-label="Choose testimonial"></div>
+            <button class="icon-btn icon-btn--round" id="nextSlide" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ O. FAQ ============ -->
+    <section class="section section--white" id="faq" aria-labelledby="faqTitle">
+      <div class="container faq-wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faqTitle">Frequently asked questions</h2>
+          <p>Quick answers to common questions. Can't find yours? <a href="#enquiry">Send us an enquiry</a>.</p>
+        </div>
+        <div class="faq" id="faqList">
+          <div class="faq__item reveal">
+            <h3><button class="faq__q" aria-expanded="false" aria-controls="faq1" id="faq1-btn">Can I enquire about product availability on WhatsApp?<i class="fa-solid fa-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq1" role="region" aria-labelledby="faq1-btn" hidden><p>Yes. Tap any "Enquire on WhatsApp" button and a message with the product name is prefilled for you. Our team will reply with current availability and details.</p></div>
+          </div>
+          <div class="faq__item reveal">
+            <h3><button class="faq__q" aria-expanded="false" aria-controls="faq2" id="faq2-btn">Can I visit the showroom before purchasing?<i class="fa-solid fa-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq2" role="region" aria-labelledby="faq2-btn" hidden><p>Absolutely. We encourage it. Visit the showroom in Sangli to see, touch and compare products before deciding.</p></div>
+          </div>
+          <div class="faq__item reveal">
+            <h3><button class="faq__q" aria-expanded="false" aria-controls="faq3" id="faq3-btn">Do you offer products across different budgets?<i class="fa-solid fa-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq3" role="region" aria-labelledby="faq3-btn" hidden><p>Yes. We aim to offer options from entry-level to premium in most categories. Share your budget and we will suggest suitable choices.</p></div>
+          </div>
+          <div class="faq__item reveal">
+            <h3><button class="faq__q" aria-expanded="false" aria-controls="faq4" id="faq4-btn">Can I compare different smartphone models?<i class="fa-solid fa-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq4" role="region" aria-labelledby="faq4-btn" hidden><p>Yes. In the showroom you can try models side by side, and our team can explain differences in display, camera, battery and storage.</p></div>
+          </div>
+          <div class="faq__item reveal">
+            <h3><button class="faq__q" aria-expanded="false" aria-controls="faq5" id="faq5-btn">Are product specifications available on the website?<i class="fa-solid fa-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq5" role="region" aria-labelledby="faq5-btn" hidden><p>Key highlights are shown on each product card and in the details view. Please confirm exact specifications with our team or the manufacturer before purchase.</p></div>
+          </div>
+          <div class="faq__item reveal">
+            <h3><button class="faq__q" aria-expanded="false" aria-controls="faq6" id="faq6-btn">Can I enquire about laptop and mobile accessories?<i class="fa-solid fa-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq6" role="region" aria-labelledby="faq6-btn" hidden><p>Of course. Ask us about chargers, cables, power banks, cases, keyboards, mice, bags and more. Tell us your device model so we can suggest compatible options.</p></div>
+          </div>
+          <div class="faq__item reveal">
+            <h3><button class="faq__q" aria-expanded="false" aria-controls="faq7" id="faq7-btn">How can I contact the store?<i class="fa-solid fa-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq7" role="region" aria-labelledby="faq7-btn" hidden><p>You can message us on WhatsApp, call us, send an email or use the enquiry form on this page. Details are listed in the <a href="#contact">Contact</a> section.</p></div>
+          </div>
+          <div class="faq__item reveal">
+            <h3><button class="faq__q" aria-expanded="false" aria-controls="faq8" id="faq8-btn">Can I request a product that is not listed?<i class="fa-solid fa-plus" aria-hidden="true"></i></button></h3>
+            <div class="faq__a" id="faq8" role="region" aria-labelledby="faq8-btn" hidden><p>Yes. The website shows a selection only. Use the enquiry form or WhatsApp to tell us what you are looking for and we will check for you.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ P. PRODUCT ENQUIRY ============ -->
+    <section class="section" id="enquiry" aria-labelledby="enqTitle">
+      <div class="container enquiry">
+        <div class="enquiry__intro reveal">
+          <span class="eyebrow">Product Enquiry</span>
+          <h2 id="enqTitle">Looking for Something Specific? Let's Help You Find It.</h2>
+          <p>Tell us which product you're interested in, and our team will help you with the details.</p>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-circle-check"></i> Availability and model options</li>
+            <li><i class="fa-solid fa-circle-check"></i> Suggestions within your budget</li>
+            <li><i class="fa-solid fa-circle-check"></i> Book a time for an in-store demo</li>
+          </ul>
+          <a class="btn btn--whatsapp js-wa" data-msg="Hello TECHNOVA STORE, I would like help choosing a product." href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Prefer WhatsApp? Chat with us</a>
+        </div>
+
+        <form class="form-card reveal" id="enquiryForm" novalidate style="--d:.1s">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="fName">Full Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="fName" name="name" autocomplete="name" required>
+              <small class="error" id="fName-err"></small>
+            </div>
+            <div class="form-field">
+              <label for="fPhone">Mobile Number <span aria-hidden="true">*</span></label>
+              <input type="tel" id="fPhone" name="phone" autocomplete="tel" inputmode="numeric" placeholder="10-digit mobile number" required>
+              <small class="error" id="fPhone-err"></small>
+            </div>
+            <div class="form-field">
+              <label for="fEmail">Email Address</label>
+              <input type="email" id="fEmail" name="email" autocomplete="email" placeholder="you@example.com">
+              <small class="error" id="fEmail-err"></small>
+            </div>
+            <div class="form-field">
+              <label for="fCategory">Product Category <span aria-hidden="true">*</span></label>
+              <select id="fCategory" name="category" required>
+                <option value="">Select a category</option>
+                <option>Smartphones</option>
+                <option>Laptops &amp; Computers</option>
+                <option>Televisions</option>
+                <option>Home Appliances</option>
+                <option>Audio &amp; Entertainment</option>
+                <option>Accessories</option>
+                <option>Other</option>
+              </select>
+              <small class="error" id="fCategory-err"></small>
+            </div>
+            <div class="form-field">
+              <label for="fProduct">Product Name</label>
+              <input type="text" id="fProduct" name="product" placeholder="e.g. Nova X Pro Smartphone">
+            </div>
+            <div class="form-field">
+              <label for="fBudget">Approximate Budget</label>
+              <select id="fBudget" name="budget">
+                <option value="">Select a range</option>
+                <option>Under ₹5,000</option>
+                <option>₹5,000 – ₹20,000</option>
+                <option>₹20,000 – ₹40,000</option>
+                <option>₹40,000 – ₹60,000</option>
+                <option>Above ₹60,000</option>
+              </select>
+            </div>
+            <div class="form-field form-field--full">
+              <label for="fMessage">Message</label>
+              <textarea id="fMessage" name="message" rows="4" placeholder="Tell us what you need, preferred brand, colour or features…"></textarea>
+            </div>
+          </div>
+          <button class="btn btn--primary btn--block btn--lg" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Enquiry</button>
+          <p class="form-note"><i class="fa-solid fa-lock"></i> Demo form: your details are not sent or stored.</p>
+          <div class="form-success" id="formSuccess" role="status" hidden>
+            <i class="fa-solid fa-circle-check"></i>
+            <div><strong>Thank you! Your enquiry has been noted.</strong><span>This is a demonstration, so nothing was sent. On the live site our team would contact you shortly.</span></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ Q. CONTACT ============ -->
+    <section class="section section--white" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contact</span>
+          <h2 id="contactTitle">Get in touch with TECHNOVA STORE</h2>
+          <p>Contact details below are placeholders for this demonstration website.</p>
+        </div>
+        <div class="contact">
+          <div class="contact__cards">
+            <div class="contact-card reveal"><i class="fa-solid fa-store"></i><div><strong>TECHNOVA STORE</strong><span>Sangli, Maharashtra, India</span></div></div>
+            <div class="contact-card reveal"><i class="fa-solid fa-location-dot"></i><div><strong>Store address</strong><span>[Store address placeholder]</span></div></div>
+            <div class="contact-card reveal"><i class="fa-solid fa-phone"></i><div><strong>Phone</strong><span>[Phone number placeholder]</span></div></div>
+            <div class="contact-card reveal"><i class="fa-solid fa-envelope"></i><div><strong>Email</strong><span>[Email placeholder]</span></div></div>
+            <div class="contact-card reveal"><i class="fa-regular fa-clock"></i><div><strong>Business hours</strong><span>[Business hours placeholder]</span></div></div>
+            <div class="contact__actions reveal">
+              <a class="btn btn--whatsapp js-wa" data-msg="Hello TECHNOVA STORE, I have a question." href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+              <a class="btn btn--primary" href="#showroom"><i class="fa-solid fa-store"></i> Visit Showroom</a>
+            </div>
+          </div>
+          <div class="map reveal" style="--d:.1s">
+            <!-- Google Maps embed placeholder: centred on Sangli city, not a real store location -->
+            <iframe title="Map of Sangli, Maharashtra (placeholder)" src="https://www.google.com/maps?q=Sangli,+Maharashtra,+India&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span class="map__label">Map placeholder: Sangli city</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ R. FINAL CTA ============ -->
+    <section class="final-cta" aria-labelledby="ctaTitle">
+      <div class="final-cta__bg" aria-hidden="true"></div>
+      <div class="container final-cta__inner reveal">
+        <h2 id="ctaTitle">Your Next Upgrade Starts Here.</h2>
+        <p>Explore smarter devices, discover useful technology and find the right products for your everyday needs.</p>
+        <div class="btn-row btn-row--center">
+          <a class="btn btn--primary btn--lg" href="#products">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn btn--ghost-light btn--lg" href="#contact">Contact Our Store</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ S. FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="logo logo--light" href="#home" aria-label="TECHNOVA STORE home">
+          <span class="logo__mark" aria-hidden="true">T</span>
+          <span class="logo__text">TECHNOVA<span>STORE</span></span>
+        </a>
+        <p>Smart Technology. Better Living. An electronics and mobile showroom in Sangli, Maharashtra, helping you find the right devices for home, work and play.</p>
+        <ul class="socials">
+          <li><a href="#" aria-label="Facebook (placeholder)" class="js-placeholder"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="Instagram (placeholder)" class="js-placeholder"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#" aria-label="YouTube (placeholder)" class="js-placeholder"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="#" aria-label="WhatsApp" class="js-wa" data-msg="Hello TECHNOVA STORE!" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#showroom">Visit Showroom</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Product Categories</h3>
+        <ul>
+          <li><a href="#products" class="js-cat" data-cat="mobiles">Smartphones</a></li>
+          <li><a href="#products" class="js-cat" data-cat="laptops">Laptops &amp; Computers</a></li>
+          <li><a href="#products" class="js-cat" data-cat="tvs">Televisions</a></li>
+          <li><a href="#products" class="js-cat" data-cat="appliances">Home Appliances</a></li>
+          <li><a href="#products" class="js-cat" data-cat="audio">Audio</a></li>
+          <li><a href="#products" class="js-cat" data-cat="accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Customer Support</h3>
+        <ul>
+          <li><a href="#enquiry">Product Enquiry</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#" class="js-wa" data-msg="Hello TECHNOVA STORE, I need some help." target="_blank" rel="noopener">WhatsApp Support</a></li>
+          <li><a href="#showroom">In-Store Demos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer__contact">
+          <li><i class="fa-solid fa-location-dot"></i> Sangli, Maharashtra, India</li>
+          <li><i class="fa-solid fa-phone"></i> [Phone placeholder]</li>
+          <li><i class="fa-solid fa-envelope"></i> [Email placeholder]</li>
+          <li><i class="fa-regular fa-clock"></i> [Hours placeholder]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 TECHNOVA STORE. All Rights Reserved.</p>
+      <p class="footer__demo">Demonstration website. Brand, products, prices, testimonials and contact details are placeholders.</p>
+    </div>
+  </footer>
+
+  <!-- ============ G. PRODUCT DETAILS MODAL ============ -->
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close icon-btn icon-btn--round" data-close aria-label="Close product details"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal__grid">
+        <div class="modal__media"><img id="modalImg" src="" alt="" width="800" height="800"></div>
+        <div class="modal__body">
+          <span class="badge badge--demo"><i class="fa-solid fa-flask"></i> Demo product &amp; sample specifications</span>
+          <span class="modal__cat" id="modalCat"></span>
+          <h2 id="modalTitle"></h2>
+          <p class="modal__price" id="modalPrice"></p>
+          <p class="modal__desc" id="modalDesc"></p>
+          <h3 class="modal__sub">Key specifications <small>(sample)</small></h3>
+          <ul class="spec-list" id="modalSpecs"></ul>
+          <h3 class="modal__sub">Available colours <small>(sample)</small></h3>
+          <ul class="swatches" id="modalColours"></ul>
+          <div class="modal__actions">
+            <button class="btn btn--primary" id="modalEnquire"><i class="fa-solid fa-paper-plane"></i> Enquire Now</button>
+            <a class="btn btn--whatsapp" id="modalWa" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Enquiry</a>
+          </div>
+          <p class="modal__fine">Prices and specifications shown are illustrative only and are not manufacturer listings or current market prices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
