@@ -24,7 +24,7 @@ technova-store/
 - Rotating announcement bar, sticky header, active navigation state, hamburger drawer on mobile/tablet
 - Header search that searches the catalogue
 - Shop-by-category cards that filter the catalogue
-- Product catalogue (18 sample products) with search, category chips, price range, sorting and Clear Filters, plus a helpful empty state
+- Product catalogue (17 sample products) with search, category chips, price range, sorting and Clear Filters, plus a helpful empty state
 - Product details modal (image, description, sample specs, sample colours, Enquire Now, WhatsApp); closes with ✕, backdrop or Esc, and traps focus
 - WhatsApp enquiry links prefilled with the product name, category and price
 - "Enquire Now" prefills the enquiry form with category, product and budget
